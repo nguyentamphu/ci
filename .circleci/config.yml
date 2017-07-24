@@ -60,3 +60,7 @@ jobs:
       - store_artifacts:
           path: /tmp/test-results
           destination: test-results
+
+    test:
+      post: 
+        - bundle exec rubocop -R
