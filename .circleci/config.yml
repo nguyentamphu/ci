@@ -28,8 +28,8 @@ jobs:
 
       - run:
           name: install dependencies rugged gem
-            command: |
-              sudo apt-get install cmake
+          command: |
+            sudo apt-get install cmake
 
       - run:
           name: install dependencies
