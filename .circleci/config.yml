@@ -27,6 +27,11 @@ jobs:
           - v1-dependencies-
 
       - run:
+          name: install dependencies rugged gem
+            command: |
+              sudo apt-get install cmake
+
+      - run:
           name: install dependencies
           command: |
             bundle install --jobs=4 --retry=3 --path vendor/bundle
