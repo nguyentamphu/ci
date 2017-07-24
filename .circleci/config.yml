@@ -41,13 +41,6 @@ jobs:
             - ./venv
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-      # start mysql
-      - run: sudo service mysql restart
-
-      # Database setup
-      - run: bundle exec rake db:create
-      - run: bundle exec rake db:schema:load
-
       # run tests!
       - run:
           name: run tests
