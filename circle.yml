@@ -1,3 +1,5 @@
 test:
+  pre:
+    - "[[ ! -s \"$(git rev-parse --git-dir)/shallow\" ]] || git fetch --unshallow"
   post:
-    - 'PRONTO_PULL_REQUEST_ID=${CI_PULL_REQUEST##*/} bundle exec pronto run -f github_pr'
+    - bundle exec pronto run -f github -c=$(git log --pretty=format:%H | tail -1) --exit-code
