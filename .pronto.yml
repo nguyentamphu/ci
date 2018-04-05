@@ -7,7 +7,7 @@ eslint:
     - 'app/assets/**/*'
 github:
   slug: nguyentamphu/ci
-  access_token: 8d11290fc8aafdbaa4a668a043d1558d5b95b27f
+  access_token: 6bfe1905491d899797dca5f40bdca2d25b5daad5
   api_endpoint: https://api.github.com/
   web_endpoint: https://github.com/
 max_warnings: 150

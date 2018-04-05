@@ -41,9 +41,13 @@ group :development, :test do
   gem 'selenium-webdriver'
 
   # Pronto
-  gem 'pronto'
-  gem 'pronto-rubocop', require: false
+  # gem 'pronto'
+  # gem 'pronto-rubocop', require: false
 end
+
+gem 'pronto'
+gem 'pronto-rubocop', require: false
+gem 'pronto-flay', require: false
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
