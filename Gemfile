@@ -39,6 +39,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  # Pronto
+  gem 'pronto'
+  gem 'pronto-rubocop', require: false
 end
 
 group :development do
