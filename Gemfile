@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
@@ -39,6 +40,18 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  ##### Analysis #####
+  gem 'brakeman'
+  gem 'bullet'
+  gem 'rails_best_practices'
+  gem 'rubocop'
+  gem 'scss_lint', require: false
+  # gem 'exception_notification'
+
+  ##### Automate Code Review #####
+  gem 'saddler'
+  gem 'saddler-reporter-github'
 end
 
 group :development do
