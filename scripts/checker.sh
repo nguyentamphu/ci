@@ -21,7 +21,7 @@ echo "* RuboCop          *"
 echo "********************"
 rubocop --require `gem which rubocop/formatter/checkstyle_formatter` --format RuboCop::Formatter::CheckstyleFormatter --out rubocop.xml
 cat rubocop.xml \
-  | checkstyle_filter-git diff origin/master \
+  | bundle exec checkstyle_filter-git diff origin/master \
   | saddler report \
     --require saddler/reporter/github \
     --reporter $REPORTER
@@ -32,7 +32,7 @@ echo "***********************"
 rails_best_practices -f xml
 
 cat rails_best_practices_output.xml \
-  | checkstyle_filter-git diff origin/master \
+  | bundle exec checkstyle_filter-git diff origin/master \
   | saddler report \
     --require saddler/reporter/github \
     --reporter $REPORTER
@@ -43,7 +43,7 @@ echo "********************"
 brakeman -o brakeman.json
 cat brakeman.json \
   | brakeman_translate_checkstyle_format translate \
-  | checkstyle_filter-git diff origin/master \
+  | bundle exec checkstyle_filter-git diff origin/master \
   | saddler report \
     --require saddler/reporter/github \
     --reporter $REPORTER
@@ -54,7 +54,7 @@ echo "* Reek             *"
 echo "********************"
 reek app --format xml > reek.xml
 cat reek.xml \
-  | checkstyle_filter-git diff origin/master \
+  | bundle exec checkstyle_filter-git diff origin/master \
   | saddler report \
     --require saddler/reporter/github \
     --reporter $REPORTER
@@ -64,7 +64,7 @@ cat reek.xml \
 # echo "********************"
 # eslint app/assets/javascripts/ -f checkstyle -o eslint.xml
 # cat eslint.xml \
-#   | checkstyle_filter-git diff origin/master \
+#   | bundle exec checkstyle_filter-git diff origin/master \
 #   | saddler report \
 #     --require saddler/reporter/github \
 #     --reporter $REPORTER
@@ -74,7 +74,7 @@ cat reek.xml \
 # echo "********************"
 # scss-lint --require=scss_lint_reporter_checkstyle --format=Checkstyle -o scsslint.xml
 # cat scsslint.xml \
-#   | checkstyle_filter-git diff origin/master \
+#   | bundle exec checkstyle_filter-git diff origin/master \
 #   | saddler report \
 #     --require saddler/reporter/github \
 #     --reporter $REPORTER

@@ -52,6 +52,7 @@ group :development, :test do
   ##### Automate Code Review #####
   gem 'saddler'
   gem 'saddler-reporter-github'
+  gem "checkstyle_filter-git", git: "https://github.com/shoyan/ruby-checkstyle_filter-git.git", branch: "implement-exec"
 
   ##### Testing #####
   gem 'rspec-rails'

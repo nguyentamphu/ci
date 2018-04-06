@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/shoyan/ruby-checkstyle_filter-git.git
+  revision: a11c3c7f4daf1ddf26c0ab4f4ae9d8b1b78bda4b
+  branch: implement-exec
+  specs:
+    checkstyle_filter-git (1.0.3)
+      git_diff_parser
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -268,6 +277,7 @@ DEPENDENCIES
   bullet
   byebug
   capybara (~> 2.13)
+  checkstyle_filter-git!
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
