@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='Rakefile'>
+    <error line='2' column='80' severity='info' message='Metrics/LineLength: Line is too long. [90/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config.ru'/>
+  <file name='Gemfile'>
+    <error line='38' column='80' severity='info' message='Metrics/LineLength: Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='39' column='27' severity='info' message='Style/SymbolArray: Use `%i` or `%I` for an array of symbols.' source='com.puppycrawl.tools.checkstyle.Style/SymbolArray'/>
+    <error line='61' column='80' severity='info' message='Metrics/LineLength: Line is too long. [93/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='64' column='80' severity='info' message='Metrics/LineLength: Line is too long. [130/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='70' column='30' severity='info' message='Style/SymbolArray: Use `%i` or `%I` for an array of symbols.' source='com.puppycrawl.tools.checkstyle.Style/SymbolArray'/>
+  </file>
+  <file name='app/channels/application_cable/channel.rb'/>
+  <file name='app/channels/application_cable/connection.rb'/>
+  <file name='app/controllers/application_controller.rb'/>
+  <file name='app/helpers/application_helper.rb'/>
+  <file name='app/jobs/application_job.rb'/>
+  <file name='app/mailers/application_mailer.rb'/>
+  <file name='app/models/application_record.rb'/>
+  <file name='bin/bundle'/>
+  <file name='bin/rails'/>
+  <file name='bin/rake'/>
+  <file name='bin/setup'/>
+  <file name='bin/update'/>
+  <file name='bin/yarn'/>
+  <file name='config/application.rb'>
+    <error line='14' column='80' severity='info' message='Metrics/LineLength: Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/boot.rb'/>
+  <file name='config/environment.rb'/>
+  <file name='config/environments/development.rb'>
+    <error line='2' column='80' severity='info' message='Metrics/LineLength: Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/environments/production.rb'>
+    <error line='2' column='80' severity='info' message='Metrics/LineLength: Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='33' column='80' severity='info' message='Metrics/LineLength: Line is too long. [102/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='45' column='80' severity='info' message='Metrics/LineLength: Line is too long. [96/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='47' column='80' severity='info' message='Metrics/LineLength: Line is too long. [96/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='60' column='80' severity='info' message='Metrics/LineLength: Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='66' column='80' severity='info' message='Metrics/LineLength: Line is too long. [100/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='81' column='80' severity='info' message='Metrics/LineLength: Line is too long. [83/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/environments/test.rb'>
+    <error line='2' column='80' severity='info' message='Metrics/LineLength: Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/initializers/application_controller_renderer.rb'/>
+  <file name='config/initializers/assets.rb'/>
+  <file name='config/initializers/backtrace_silencers.rb'>
+    <error line='3' column='80' severity='info' message='Metrics/LineLength: Line is too long. [107/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='6' column='80' severity='info' message='Metrics/LineLength: Line is too long. [112/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/initializers/cookies_serializer.rb'/>
+  <file name='config/initializers/filter_parameter_logging.rb'/>
+  <file name='config/initializers/inflections.rb'/>
+  <file name='config/initializers/mime_types.rb'/>
+  <file name='config/initializers/wrap_parameters.rb'>
+    <error line='6' column='80' severity='info' message='Metrics/LineLength: Line is too long. [96/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/puma.rb'>
+    <error line='10' column='80' severity='info' message='Metrics/LineLength: Line is too long. [85/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='config/routes.rb'/>
+  <file name='config/spring.rb'/>
+  <file name='db/schema.rb'>
+    <error line='3' column='80' severity='info' message='Metrics/LineLength: Line is too long. [81/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='8' column='80' severity='info' message='Metrics/LineLength: Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='11' column='80' severity='info' message='Metrics/LineLength: Line is too long. [86/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='db/seeds.rb'>
+    <error line='1' column='80' severity='info' message='Metrics/LineLength: Line is too long. [103/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='2' column='80' severity='info' message='Metrics/LineLength: Line is too long. [111/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+    <error line='6' column='80' severity='info' message='Metrics/LineLength: Line is too long. [81/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+  <file name='test/application_system_test_case.rb'/>
+  <file name='test/test_helper.rb'>
+    <error line='5' column='80' severity='info' message='Metrics/LineLength: Line is too long. [82/80]' source='com.puppycrawl.tools.checkstyle.Metrics/LineLength'/>
+  </file>
+</checkstyle>
