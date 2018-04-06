@@ -47,7 +47,7 @@ Style/NumericLiterals:
 Style/RedundantSelf:
   Enabled: false
 
-Style/SingleSpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Enabled: false
 
 Style/MultilineOperationIndentation:

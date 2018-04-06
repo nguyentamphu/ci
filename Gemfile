@@ -52,6 +52,9 @@ group :development, :test do
   ##### Automate Code Review #####
   gem 'saddler'
   gem 'saddler-reporter-github'
+
+  ##### Testing #####
+  gem 'rspec-rails'
 end
 
 group :development do
