@@ -7,5 +7,10 @@ class ApplicationController < ActionController::Base
       10.times.each {|t| t.to_i}
       return x
     end
+
+    def im_bad_method2
+      x = "lol#{Time.now}"
+      return x
+    end
   end
 end
